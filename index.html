@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF=8">
+    <title>picture</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body style="margin: 0;">
+    <center>
+    <div style="overflow: hidden;">
+        <div class="container">
+            <div class="inner">
+                <img src="1.jpg">
+            </div>
+            <div class="inner">
+                <img src="2.jpg">
+            </div>
+            <div class="inner">
+                <img src="3.jpg">
+            </div>
+            <div class="inner">
+                <img src="4.jpg">
+            </div>
+            <div class="inner">
+                <img src="5.jpg">
+            </div>
+            <div class="inner">
+                <img src="6.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <button class="button3">3</button> 
+    <button class="button4">4</button> 
+    <button class="button5">5</button> 
+    <button class="button6">6</button> 
+    </center>
+
+    <script>
+
+
+
+        document.querySelector('.button2').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(-100vw)';
+        });
+
+        document.querySelector('.button3').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(-200vw)';
+        });
+
+        document.querySelector('.button4').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(-300vw)';
+        });
+
+        document.querySelector('.button5').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(-400vw)';
+        });
+
+        document.querySelector('.button6').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(-500vw)';
+        });
+        
+        document.querySelector('.button1').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 
+            'translate(0vw)';
+        });
+
+
+
+
+    </script>
+
+
+    <style>
+        body {background-color: rgb(202, 214, 221);}
+    </style>
+
+
+
+
+
+</body>
+
+</html>
